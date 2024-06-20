@@ -30,7 +30,15 @@
 }
 
 @layer components {
-  #sidebar.w-20 .sidebar-text {
+  .sidebar-closed {
+    width: 80px;
+  }
+
+  .sidebar-closed .sidebar-text {
     display: none;
+  }
+
+  .sidebar-open {
+    width: 260px;
   }
 }

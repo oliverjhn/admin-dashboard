@@ -11,9 +11,9 @@
 <body>
   <div class="flex">
     <!-- Sidebar start -->
-    <aside class="w-72 bg-blue-500 text-white min-h-screen font-roboto font-medium">
+    <aside id="sidebar" class="w-72 bg-blue-500 text-white min-h-screen font-roboto font-medium transition-all duration-300 ease-in-out">
       <div class="flex items-center px-5 py-3 pb-7">
-        <img src="images/menu.svg" class="w-10 h-10 filter invert " />
+        <img id="menuToggle" src="images/menu.svg" class="w-10 h-10 filter invert cursor-pointer" />
         <span class="text-2xl ml-3">Dashboard</span>
       </div>
       <nav>
@@ -87,6 +87,8 @@
     </main>
     <!-- Main content end -->
   </div>
+
+  <script src="./app.js"></script>
 </body>
 
 </html>

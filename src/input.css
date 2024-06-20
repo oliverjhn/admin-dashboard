@@ -30,7 +30,7 @@
 }
 
 @layer components {
-  #sidebar.w-20 span {
+  #sidebar.w-20 .sidebar-text {
     display: none;
   }
 }

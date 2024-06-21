@@ -65,12 +65,12 @@
               <span class="sidebar-text ml-5 text-lg transition duration-300 ease-in-out">Settings</span>
             </button>
           </li>
-          <li>
+          <li,>
             <button class="w-full flex items-center px-3 py-3 focus:bg-blue-600 focus:outline-none hover:bg-blue-600" aria-label="Support">
               <img src="images/support.svg" class="filter w-7 h-7 ml-3 invert" />
               <span class="sidebar-text ml-5 text-lg transition duration-300 ease-in-out">Support</span>
             </button>
-          </li>
+          </li,>
           <li>
             <button class="w-full flex items-center px-3 py-3 focus:bg-blue-600 focus:outline-none hover:bg-blue-600" aria-label="Privacy">
               <img src="images/security.svg" class="filter w-7 h-7 ml-3 invert" />
@@ -84,6 +84,41 @@
 
     <!-- Main content start -->
     <main class="flex-1 bg-slate-200">
+      <header class="bg-white shadow">
+        <div class="px-4 py-6 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between">
+            <!-- Search icon visible only on mobile -->
+            <button class="md:hidden p-3 rounded-full text-gray-400 hover:text-gray-500 bg-slate-200">
+              <img src="images/search.svg" alt="Search icon" class="h-8 w-8" style="min-width: 32px; min-height: 32px;">
+            </button>
+            <!-- Search form visible only on larger screens -->
+            <form class="hidden md:block w-full max-w-xl">
+              <label for="search" class="sr-only">Search</label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <img src="images/search.svg" alt="Search icon" class="h-6 w-6 text-gray-400">
+                </div>
+                <input id="search" name="search"
+                  class="block w-full pl-12 pr-3 py-3 border border-gray-300 rounded-full leading-6 bg-slate-200 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-lg"
+                  placeholder="Search" type="search">
+              </div>
+            </form>
+            <div class="ml-6 flex items-center space-x-4 md:ml-8">
+              <button class="bg-slate-200 p-2 rounded-full text-gray-400 hover:text-gray-500 text-lg">
+                <img src="images/bell.svg" alt="Notifications" class="h-8 w-8" style="min-width: 32px; min-height: 32px;">
+              </button>
+              <div class="relative">
+                <div>
+                  <button class="flex items-center text-sm focus:outline-none px-2 py-1" id="user-menu" aria-haspopup="true">
+                    <img class="h-12 w-12 rounded-full" src="images/stylisedpenguin.jpg" alt="Profile picture">
+                    <span class="ml-4 font-bold text-gray-700 text-xl"><span class="sr-only">Open user menu for </span>John Doe</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
       <!-- Main content area -->
     </main>
     <!-- Main content end -->

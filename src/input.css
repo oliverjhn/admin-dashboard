@@ -41,4 +41,12 @@
   .sidebar-open {
     width: 256px;
   }
+
+  .dropdown-content {
+    @apply overflow-hidden hidden transition-all duration-300 ease-out;
+  }
+
+  .dropdown-content.open {
+    @apply inline-block transition-all duration-500 ease-in;
+  }
 }
